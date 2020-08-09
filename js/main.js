@@ -20,3 +20,5 @@ do {
     }
 }
 while(saisieUtilisateur != nombre);
+
+alert = ("Bravo, vous avez trouvé le nombre.");
