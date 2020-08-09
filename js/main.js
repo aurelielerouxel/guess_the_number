@@ -1,17 +1,19 @@
 // Fonctions
 function nombreAleatoire(min, max) {
-    let nombre = min + (max-min+1)*Math.random();
+    let nombre = min + (max - min + 1) * Math.random();
     return Math.floor(nombre);
 }
 
 // Variables
 let nombre = nombreAleatoire(1, 100);
+let score = 0;
 let saisieUtilisateur;
 let message = "Trouvez le nombre entre 1 et 100.";
 
 // Jeu
 do {
     saisieUtilisateur = prompt(message);
+    score++;
     if (saisieUtilisateur > nombre) {
         message = "C'est moins !";
     }
@@ -21,4 +23,4 @@ do {
 }
 while(saisieUtilisateur != nombre);
 
-alert = ("Bravo, vous avez trouvé le nombre.");
+alert("Bravo, vous avez trouvé le nombre en " + score + " coups.");
