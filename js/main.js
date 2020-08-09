@@ -10,4 +10,13 @@ let saisieUtilisateur;
 let message = "Trouvez le nombre entre 1 et 100.";
 
 // Jeu
-saisieUtilisateur = prompt(message);
+do {
+    saisieUtilisateur = prompt(message);
+    if (saisieUtilisateur > nombre) {
+        message = "C'est moins !";
+    }
+    else {
+        message = "C'est plus !";
+    }
+}
+while(saisieUtilisateur != nombre);
